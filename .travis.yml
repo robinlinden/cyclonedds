@@ -162,6 +162,7 @@ windows1809_mingw64: &windows1809_mingw64
       export PATH=/C/tools/msys64/mingw64/bin:$PATH
       export MAKE=mingw32-make  # so that Autotools can find it
       export CC=x86_64-w64-mingw32-gcc
+      export CXX=x86_64-w64-mingw32-g++
   install:
     - choco install innoextract
     - choco install maven --ignore-dependencies
